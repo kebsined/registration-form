@@ -1,0 +1,55 @@
+.app {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	margin-top: 5rem;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form {
+	height: 350px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	/* border: 2px solid #faf9f68d; */
+	border-radius: 30px;
+	animation: 3s show ease;
+	box-shadow: 1px 1px 1px #faf9f6;
+}
+
+@keyframes show {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.button {
+	border-radius: 5rem;
+	height: 2rem;
+	width: 10rem;
+	padding: 0;
+	border: none;
+	background: #db4e126e;
+	box-shadow: 1px 1px 1px #faf9f6;
+	color: #faf9f6;
+}
+
+.button:active {
+	transform: scale(0.9);
+}
+
+.button:disabled {
+	background-color: #f0eded17;
+}
+
+.error {
+	margin-bottom: 5px;
+	color: #c7db12;
+	font-size: 10px;
+}
